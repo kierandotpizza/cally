@@ -21,7 +21,7 @@ $arrayLoader = new App\Config\Loaders\ArrayLoader([
 $config = new App\Config\Config();
 $config->load([$arrayLoader]);
 
-$config->get('app.name');
+dump($config->get('app.name', 'KSHUX'));
 
 dump($config);
 
